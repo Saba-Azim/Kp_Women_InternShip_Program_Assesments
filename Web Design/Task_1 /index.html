@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LED Lights</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/cc6329a6a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<h2 class="logo">Bright Moon</h2>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about-us">ABOUT US</a></li>
+					<li><a href="#latest-news">LATEST ITEMS</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input class="srch" type="search" name="" placeholder="Type Here To Search!">
+				<a href="#"><button class="btn">SEARCH</button></a>
+			</div>
+		</div>
+		<div class="content">
+			<h1>LED Lights</h1>
+			<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<button class="btun">CONTACT US</button>
+		</div>
+
+	</div>
+
+	<!--End Of Banner-->
+
+	<div class="container reveal">
+		<div class="heading">
+			<h3>What We Do!</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="img1">
+					<img src="images/a.jpeg">
+					<a class="link" href="#">Home Decoration</a>
+				</div>
+			</div>
+			<div class="col">
+				<div class="img1">
+					<img src="images/b.jpeg">
+					<a class="link" href="#">Office Decoration</a>
+				</div>
+			</div>
+			<div class="col">
+				<div class="img1">
+					<img src="images/c.jpeg">
+					<a class="link" href="#">Room Decoration</a>
+				</div>
+			</div>
+			<div class="col">
+				<div class="img1">
+					<img src="images/d.jpeg">
+					<a class="link" href="#">Lightning Decoration</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--End Section -->
+
+	<!--Section 2-->
+
+	<div class="container reveal" id="about-us">
+		<div class="row">
+			<div class="colum">
+				<img src="images/e.jpeg">
+			</div>
+			<div class="col1">
+				<div class="head">
+					<h3>About</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<button>More About Us</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- End of Section 2-->
+
+	<!--Section 3-->
+
+	<div class="cont reveal">
+		<div class="row">
+			<div class="colm">
+				<div class="full"></div>
+			</div>
+			<div class="colm1">
+				<div class="head1">
+					<h3>Best<br>Lights For<br> Your Home</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					<button>Read More</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--End of Section 3-->
+
+	<!--Section 4-->
+	<div class="cont1 reveal" id="latest-news">
+		<div class="row">
+			<div class="colm2">
+				<div class="head2">
+					<h3>Latest Items</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="colm3">
+				<div class="img2">
+					<img src="images/j.jpeg" style="height: 350px; width: 450px;">
+				</div>
+			</div>
+			<div class="colm3">
+				<div class="img2">
+					<img src="images/g.jpeg" style="height: 350px; width: 450px;">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="colm3">
+				<div class="img2">
+					<img src="images/h.jpeg" style="height: 350px; width: 450px;">
+				</div>
+			</div>
+			<div class="colm3">
+				<div class="img2">
+					<img src="images/i.jpeg" style="height: 350px; width: 450px;">
+				</div>
+			</div>
+		</div>
+	</div>			
+		<div class="icons">		
+			<a href=""><i style="text-align: center;" class="fa-brands fa-facebook "></i></a>
+			<a href=""><i class="fa fa-instagram"></i></a>
+			<a href=""><i class="fa fa-twitter"></i></a>
+			<a href=""><i class="fa fa-youtube"></i></a>
+			<div class="text">
+				<p class="prg"><span>&copy</span>2025 All Rights Reserved By Sabahun Noor</p>
+			</div>			
+		</div>
+	
+	
+<!-- =======  INTERSECTION OBSERVER & SEARCH  ======= -->
+<script>
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.15});
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Simple search filter (filters .img1 & .img2 by data-name / alt text)
+    const searchBtn = document.querySelector('.btn');
+    const searchInput = document.querySelector('.srch');
+    const items = document.querySelectorAll('[data-name]');
+
+    function filterItems(){
+      const query = searchInput.value.trim().toLowerCase();
+      items.forEach(item => {
+        const name = item.dataset.name.toLowerCase();
+        item.style.display = name.includes(query) || query==='' ? '' : 'none';
+      });
+    }
+
+    searchBtn.addEventListener('click', e => {
+      e.preventDefault();
+      filterItems();
+      if(location.hash!== '#latest-news') location.hash = 'latest-news';
+    });
+
+    // Allow live filtering as user types (optional)
+    searchInput.addEventListener('keyup', filterItems);
+  </script>
+
+
+</body>
+</html>
+
+
