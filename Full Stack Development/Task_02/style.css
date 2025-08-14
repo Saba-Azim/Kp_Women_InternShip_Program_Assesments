@@ -1,0 +1,53 @@
+
+    .hero {
+      position: relative;
+      background: #CBE5FE;
+      padding-top: 3rem;
+      color: #4A90E2 ;
+      padding-bottom: 4rem;
+      text-align: left;
+    }
+
+    .hero-img {
+      width: 450px;
+      height: auto;
+      margin-right: -30%;
+    }
+
+    .feature-cards {
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 1rem;
+    }
+
+    .card-custom {
+      width: 200px;
+      height: 140px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #6689E7;
+      border: 2px solid gray;
+    }
+
+    .card-custom i {
+      font-size: 32px;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .feature-cards {
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+    
