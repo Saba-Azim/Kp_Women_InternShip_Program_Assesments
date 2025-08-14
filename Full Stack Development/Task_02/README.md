@@ -1,4 +1,4 @@
-# Task 01 — Full Website Layout
+# Task 02 — Website Template Recreation (HTML, CSS, Bootstrap)
 
-In this Task i complete responsive website layout built using **HTML**, **CSS**, **Bootstrap** and **JavaScript**.  
-This layout includes a navigation bar, hero section, content sections, and a footer, designed to be mobile-friendly and visually appealing.
+Recreated a sample website template provided by the instructor using **HTML**, **CSS**, and **Bootstrap**.  
+The design is fully responsive, leveraging Bootstrap’s grid system and components for faster development.
