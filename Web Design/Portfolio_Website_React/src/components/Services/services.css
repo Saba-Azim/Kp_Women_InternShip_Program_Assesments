@@ -1,0 +1,99 @@
+/* Services.css */
+.services-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%); 
+  margin: 0.5rem auto 0;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect - Change these colors to your preference */
+.service-card:hover {
+  border: 2px solid #f0f;
+  background-image: linear-gradient(45deg, #3f0028, #582300);
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.service-card:hover h3 {
+  color: #3498db; /* Change text color on hover */
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.card-content {
+  position: relative;
+}
+
+
+.service-card p {
+  color: #d4d4d4;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  position: relative;
+  background: linear-gradient(120deg, #df8908 50.41%, #b415ff 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.read-more-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #3498db;
+  transition: width 0.3s ease;
+}
+
+.service-card:hover .read-more-btn::after {
+  width: 100%;
+}
