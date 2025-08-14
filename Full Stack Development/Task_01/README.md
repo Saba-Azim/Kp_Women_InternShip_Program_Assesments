@@ -1,4 +1,4 @@
-# Task 01 — Full Website Layout
+# Task 01 — Simple Services Section (HTML, CSS)
 
-In this Task i complete responsive website layout built using **HTML**, **CSS**, **Bootstrap** and **JavaScript**.  
-This layout includes a navigation bar, hero section, content sections, and a footer, designed to be mobile-friendly and visually appealing.
+A clean and responsive **Services** section built using **HTML** and **CSS**.  
+The layout displays multiple service cards with titles, descriptions, and icons, making it perfect for showcasing offerings on a website.
