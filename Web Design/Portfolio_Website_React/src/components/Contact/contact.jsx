@@ -17,13 +17,13 @@ const contact = () => {
                  <p>I'm currently available to take new projects, so feel free to contact</p>
                  <div className="contact-details">
                     <div className="contact-detail">
-                        <img src={mail} alt="" /> <p>azimsaba878@gmail.com</p>
+                        <img src={mail} alt="" /> <p>abc@gmail.com</p>
                     </div>
                     <div className="contact-detail">
                         <img src={address} alt="" /> <p>Mingora, Swat</p>
                     </div>
                     <div className="contact-detail">
-                        <img src={phone} alt="" /><p>+92-3488337020</p>
+                        <img src={phone} alt="" /><p>+92-XXXXXXXXXX</p>
                     </div>
                  </div>
             </div>
@@ -41,5 +41,6 @@ const contact = () => {
     </div>
   )
 }
+
 
 export default contact
