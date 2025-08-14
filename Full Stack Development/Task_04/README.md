@@ -1,4 +1,12 @@
-# Task 01 — Full Website Layout
+# Task 04 — Full CRUD Application using PHP & MySQL
 
-In this Task i complete responsive website layout built using **HTML**, **CSS**, **Bootstrap** and **JavaScript**.  
-This layout includes a navigation bar, hero section, content sections, and a footer, designed to be mobile-friendly and visually appealing.
+A complete PHP-based web application implementing **CRUD** operations:
+- **Create** — Add new records to the database.
+- **Read** — View and list all records.
+- **Update** — Edit existing records.
+- **Delete** — Remove records from the database.
+
+## Technologies Used
+- HTML,CSS & Bootstrap (Frontend UI)
+- PHP (Server-side logic)
+- MySQL (Database)
